@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02 | Aula 06</title>
+    <link rel="stylesheet" href="style.css"> <!-- estilo será adicionado com o decorrer dos dias -->
+</head>
+<body>
+    <h1>Calculadora simples</h1>
+    <p>Adicione o primeiro valor: <input type="text" id="valor1"></p>
+    <p>Adicione o segundo valor: <input type="text" id="valor2"></p>
+    <p>Selecione a operação desejada: <select name="operacoes" id="operacoes" onchange="removerSelecione()">
+        <option value="preenchimento" disabled selected>Selecione...</option>
+        <option value="mais">Adição</option>
+        <option value="menos">Subtração</option>
+        <option value="vezes">Multiplicação</option>
+        <option value="divisao">Divisão</option>
+    </select>
+    <button onclick="calculo()">Calcular</button>
+    <button onclick="clean()">Limpar</button>
+</p>
+    <div id="resposta"></div>
+    <script src="script.js"></script>
+</body>
+</html>
